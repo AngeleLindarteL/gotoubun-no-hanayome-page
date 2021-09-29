@@ -1,0 +1,411 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.qp-container{
+    max-width: 2200px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.hola{
+    width: 500px;
+}
+
+section{
+    margin: auto;
+}
+
+/*  Header Styles */
+
+header{
+    background-color: transparent;
+    height: 8vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 9999;
+    transition: .2s;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gtnh-logo{
+    width: 20%;
+    height: 100%;
+}
+
+.gtnh-logo img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.header-btn{
+    border: 2px solid rgb(241, 116, 125);
+    padding: 10px;
+    text-transform: uppercase;
+    color:rgb(241, 116, 125);
+    transition: .2s;
+    text-decoration: none;
+}
+.header-btn:hover{
+    background-color: rgb(241, 116, 125);
+    color: white;
+}
+/* principal img slider */
+
+#promo-slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 2000px;
+}
+
+.img-slider{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.slider-img-container{
+    height: 100%;
+    overflow: visible;
+    transition: .5s;
+    display: flex;
+    position: absolute;
+}
+
+.slider-img-container figure{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-position: center;
+}
+
+.promo-banner-1{
+    background: url(./img/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.promo-banner-2{
+    background: url(./img/2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.promo-banner-3{
+    background: url(./img/3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.promo-banner-4{
+    background: url(./img/4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+.slider-controller{
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    padding: .7%;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+}
+
+.transition-btn{
+    background-color: transparent;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    margin: 7px;
+    outline: none;
+    padding:7px;
+    transition: .2s;
+    border: 2px solid white;
+}
+
+.transition-btn:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Meet Quintuplets */
+
+.meeting-container{
+    width: 100%;
+    height: fit-content;
+}
+
+.meet-template{
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.meet-template:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.meet-template img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.meet-info-container{
+    width: 50%;
+    height: 100%;
+}
+
+.meet-info-container article{
+    padding: 1%;
+    height: 50%;
+    overflow-y: scroll;
+}
+
+.meet-info-container article::-webkit-scrollbar{
+    background: rgb(242 152 158);
+    border-radius: 20px;
+    width: 10px;
+}
+
+.meet-info-container article::-webkit-scrollbar-thumb{
+    background: rgb(241, 116, 125);
+    border-radius: 20px;
+}
+.meet-info-container article h2{
+    font-size: 4em;
+    margin: 0;
+    color: rgb(242 152 158);
+}
+.meet-info-container article p{
+    font-size: 1.6em;
+    margin: 1% 0%;
+}
+.meet-info-container article a{
+    margin: .7% 0;
+    font-size: .8em;
+    padding: 0;
+    border: 1px solid rgb(242 152 158);
+    padding: .5%;
+    text-decoration: none;
+    transition: .2s;
+    left: 32%;
+    bottom: 2%;
+    color: rgb(242 152 158);
+}
+
+.meet-info-container article a:hover{
+    color: white;
+    background-color: rgb(242 152 158);
+}
+
+.detailed-info{
+    font-size: 1.1em;
+    padding: 0;
+    margin: 10px;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.detailed-info li{
+    list-style-type: none;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(242 152 158);
+    border-radius: 20px;
+    margin: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.meet-container-gal{
+    display: flex;
+    height: 50%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.meet-container-gal img{
+    margin: 1.5%;
+    width: 30%;
+    height: 80%;
+    object-fit: cover;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.089);
+    transition: .3s;
+}
+
+.meet-container-gal img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* WHERE TO WATCH */
+
+.wtw-container{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.wtw-container h2{
+    color: white;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2.3em;
+}
+
+.wtw{
+    width: 33.33%;
+    height: 90%;
+    overflow: hidden;
+    transition: .2s;
+    filter: brightness(70%);
+}
+.wtw:hover{
+    filter: brightness(100%);
+}
+
+.wtw a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+.wtw:hover a{
+    transform: scale(1.1);
+}
+.wtw a img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#funimation{
+    background-color: #41009c;
+}
+#crunchyroll{
+    background-color: #f37521;
+}
+#netflix{
+    background-color: white;
+}
+
+/* This is for Zoomed images in JS */
+
+
+.zoomedImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.644);
+}
+.zoomedImg img{
+    width: fit-content;
+    height: 90%;
+    object-fit: contain;
+    
+}
+.zoomedImg .closeBtn{
+    border-radius: 50%;
+    background: rgb(242 152 158);
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.zoomedImg .closeBtn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*  Footer */
+
+footer{
+    background-color: rgb(241, 116, 125);
+    height: 20vh;
+    padding: 2% 0;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container h3{
+    margin: 1%;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: white;
+}
+
+.social-media-container{
+    display: flex;
+    width: 30%;
+    height: 90%;
+    justify-content: space-evenly;
+}
+.social-media-container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    transition: .2s;
+}
+
+.social-media-container a:hover{
+    transform: scale(1.1);
+}
+
+.social-media-container a img{
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+}
